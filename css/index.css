@@ -1,0 +1,14 @@
+* {
+    background-color: black;
+}
+
+#navigation-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navigation-bar img {
+    height: 150px;
+    width: 150px;
+}
