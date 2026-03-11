@@ -50,6 +50,14 @@
             <a href="shoes.html" class="nav-links lexend-peta-regular">Shoes</a>
             <a href="jewelry.html" class="nav-links lexend-peta-regular">Jewelry</a>
         </div>
+        <div id="dropdown-account-link">
+            <img id="close-icon" src="pictures/icons/close_24dp_D4AF37_FILL0_wght400_GRAD0_opsz24.png" alt="close-icon">
+            <a href="shirts.html" class="nav-links lexend-peta-regular">Shirts</a>
+            <a href="pants.html" class="nav-links lexend-peta-regular">Pants</a>
+            <a href="bags.html" class="nav-links lexend-peta-regular">Bags</a>
+            <a href="shoes.html" class="nav-links lexend-peta-regular">Shoes</a>
+            <a href="jewelry.html" class="nav-links lexend-peta-regular">Jewelry</a>
+        </div>
     </body>
     <script>
 
@@ -62,15 +70,10 @@
         document.getElementById("menu-icon").addEventListener("click", dropdownToggle);
         document.getElementById("close-icon").addEventListener("click", dropdownToggle);
 
-        document.getElementById("account-icon").addEventListener("click", function() {
-            // document.getElementById("dropdown-account-link").classList.toggle("active");
-            // document.querySelector("main").classList.toggle("blurred");
-            // document.querySelector("header").classList.toggle("blurred");
-        }
-    );
-        document.getElementById("shopping-bag-icon").addEventListener("click", function() {
-
-        }
-    );
+        document.getElementById("account-icon").addEventListener("click", dropdownToggle);
+        document.getElementById("close-icon").addEventListener("click", dropdownToggle);
+        
+        document.getElementById("shopping-bag-icon").addEventListener("click", dropdownToggle);
+        document.getElementById("close-icon").addEventListener("click", dropdownToggle);
     </script>
 </html>

@@ -33,7 +33,7 @@
 }
 
 /* Navigation Menu Bar */
-#dropdown-menu-link {
+#dropdown-menu-link, #dropdown-account-link {
     width: 400px;
     height: 100%;
     display: flex;
@@ -52,23 +52,23 @@
     transition: transform 0.3s ease-in, opacity 0.3s ease-in, visibility 0.3s ease-in;
 }
 
-#dropdown-menu-link a {
+#dropdown-menu-link a, #dropdown-account-link a {
     background-color: white;
 }
 
-#dropdown-menu-link.active {
+#dropdown-menu-link.active, #dropdown-account-link.active {
     visibility: visible;
     opacity: 1;
     transform: translateX(0);
     backdrop-filter: blur(0.8);
 }
 
-#dropdown-menu-link img {
+#dropdown-menu-link img, #dropdown-account-link img {
     background-color: transparent;
     align-self: flex-end;
 }
 
-#dropdown-menu-link a {
+#dropdown-menu-link a, #dropdown-account-link a {
     color: rgb(212, 175, 55);
     font-size: 30px;
     text-decoration: none;
