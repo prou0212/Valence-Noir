@@ -17,26 +17,27 @@
     <body>
         <header>
             <div id="navigation">
-
                 <div id="left-placeholder"></div>
-
                 <div id="nav-container">
                     <a href="index.html">
                         <div class="cinzel-regular">VALENCE-NOIR</div>
                     </a>
                 </div>
-
                 <div id="icon-detection">
                     <img id="menu-icon" src="pictures/icons/menu_24dp_D4AF37_FILL0_wght400_GRAD0_opsz24.png" alt="Dropdown">
                     <img id="account-icon" src="pictures/icons/person_24dp_D4AF37_FILL0_wght400_GRAD0_opsz24.png" alt="Account">
                     <img id="shopping-bag-icon" src="pictures/icons/shopping_bag_24dp_D4AF37_FILL0_wght400_GRAD0_opsz24.png" alt="Cart">
                 </div>
-
             </div>
-
         </header>
         <main>
-            
+           <div id="main-content">
+                <h1 class="sedan-sc-regular" id="main-text">
+                    THE FUTURE IS NOW! <br>
+                    I am Amazing <br>
+                    Jesse Proulx
+                </h1>
+           </div> 
         </main>
         <footer>
             
@@ -51,14 +52,20 @@
         </div>
     </body>
     <script>
-        document.getElementById("menu-icon").addEventListener("click", function() {
-            document.getElementById("dropdown-menu-link").classList.toggle("active");
-    });
-        document.getElementById("close-icon").addEventListener("click", function() {
-        document.getElementById("dropdown-menu-link").classList.toggle("active");
-    });
-        document.getElementById("account-icon").addEventListener("click", function() {
 
+        function dropdownToggle() {
+            document.getElementById("dropdown-menu-link").classList.toggle("active");
+            document.querySelector("main").classList.toggle("blurred");
+            document.querySelector("header").classList.toggle("blurred");
+        }
+
+        document.getElementById("menu-icon").addEventListener("click", dropdownToggle);
+        document.getElementById("close-icon").addEventListener("click", dropdownToggle);
+
+        document.getElementById("account-icon").addEventListener("click", function() {
+            // document.getElementById("dropdown-account-link").classList.toggle("active");
+            // document.querySelector("main").classList.toggle("blurred");
+            // document.querySelector("header").classList.toggle("blurred");
         }
     );
         document.getElementById("shopping-bag-icon").addEventListener("click", function() {
