@@ -31,22 +31,23 @@
     text-decoration: none;
 }
 
-#nav-link {
+#dropdown-menu-link {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: 50px;
     padding: 30px 0;
+    display: none;
 }
 
-#nav-link a {
+#dropdown-menu-link a {
     color: rgb(212, 175, 55);
     font-size: 30px;
     text-decoration: none;
 }
 
-.nav-links {
+.dropdown-menu-links {
     text-decoration: none;
 }
 
