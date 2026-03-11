@@ -1,17 +1,23 @@
+/* Color in Hex #D4AF37 */
+
 * {
     background-color: black;
 }
 
+/* Navigational Bar for header*/
 #nav-container {
     display: flex;
     justify-content: center;
 }
 
-#nav-container img {
-    height: 150px;
-    width: 150px;
+#nav-container div {
+    font-size: 50px;
+    color: rgb(212, 175, 55);
 }
 
+#nav-container a {
+    text-decoration: none;
+}
 
 #nav-link {
     display: flex;
@@ -24,4 +30,26 @@
 
 #nav-link a {
     color: rgb(212, 175, 55);
+    font-size: 30px;
+}
+
+.nav-links {
+    text-decoration: none;
+}
+
+/* .nav-links:hover {
+    transition: ease 0.2s;
+} */
+
+#icon-detection {
+    display: flex;
+    
+    justify-content: start;
+    gap: 10px;
+}
+
+#icon-detection img {
+    padding: 15px;
+    width: 25px;
+    height: 25px;
 }
