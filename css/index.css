@@ -5,7 +5,19 @@
 }
 
 /* Navigational Bar for header*/
+#navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+}
+
+#left-placeholder {
+    flex: 1;
+}
+
 #nav-container {
+    flex: 1;
     display: flex;
     justify-content: center;
 }
@@ -31,25 +43,23 @@
 #nav-link a {
     color: rgb(212, 175, 55);
     font-size: 30px;
+    text-decoration: none;
 }
 
 .nav-links {
     text-decoration: none;
 }
 
-/* .nav-links:hover {
-    transition: ease 0.2s;
-} */
-
 #icon-detection {
+    flex: 1;
     display: flex;
-    
-    justify-content: start;
+    justify-content: flex-end;
     gap: 10px;
+    align-items: center;
 }
 
 #icon-detection img {
-    padding: 15px;
     width: 25px;
     height: 25px;
+    padding: 5px;
 }
