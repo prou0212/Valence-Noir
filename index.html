@@ -33,39 +33,39 @@
         <main>
             <video id="video-file" src="video/FASHION-FILM-final.mp4" autoplay loop muted playsinline></video>
             <div id="main-content">
-                 <h1 class="sedan-sc-regular reveal" id="main-text">
-                     WHERE DARKNESS MEETS ELEGANCE
-                 </h1>
+                 <h1 class="sedan-sc-regular reveal" id="main-text">WHERE DARKNESS MEETS ELEGANCE</h1>
             </div>
-            <h1 class="sedan-sc-regular" id="clothing-title">SEE IT, DREAM IT, WEAR IT</h1>
-           <div id="clothing-selector-container">
+            <!-- <h1 class="sedan-sc-regular" id="clothing-title">SEE IT, DREAM IT, WEAR IT</h1> -->
+            <section id="clothing-selector-container">
                 <div class="collection-container">
-                    <h3 class="quicksand-regular" id="selector-title">SOLEIL NOIR COLLECTION</h3>
+                    <h3 class="quicksand-regular">SOLEIL NOIR COLLECTION</h3>
                     <img src="pictures/index/naomi-campbell-walks-the-runway-during-the-balmain-homme-menswear-fall-winter-2024-2025-show-as-part-of-paris-fashion-week-on-january-20-2024-65b3917d7b5aa.jpg" alt="runway-collection">
-                    <button class="sedan-sc-regular">SHOP NOW</button>
+                    <a href="soleil-noir-collection.html" class="sedan-sc-regular buttons reveal">SHOP NOW</a>
                 </div>     
                 <div class="mens-wear-container">
                     <h3 class="quicksand-regular">MEN'S CLOTHING</h3>
                     <img src="pictures/index/Dolce-e-Gabb-m-F23-018.jpg" alt="runway-collection">
-                    <button class="sedan-sc-regular">SHOP NOW</button>
+                    <a href="mens-clothing.html" class="sedan-sc-regular buttons reveal">SHOP NOW</a>
                 </div>
                 <div class="womens-wear-container">
-                    <h3 class="quicksand-regular" id="selector-title">WOMEN'S CLOTHING</h3>
+                    <h3 class="quicksand-regular">WOMEN'S CLOTHING</h3>
                     <img src="pictures/index/gigi-hadid-walks-the-runway-during-the-chanel-womenswear-spring-summer-2024-show-as-part-of-paris-fashion-week-on-october-03-2023-in-paris-france-65b39742e17c8.jpg" alt="runway-collection">
-                    <button class="sedan-sc-regular">SHOP NOW</button>
+                    <a href="womens-clothing.html" class="sedan-sc-regular buttons reveal">SHOP NOW</a>
                 </div>
-           </div>
+            </section>
+            <section>
+                
+            </section>
         </main>
         <footer>
             
         </footer>
         <div id="dropdown-menu-link">
             <img id="close-icon" src="pictures/icons/close_24dp_D4AF37_FILL0_wght400_GRAD0_opsz24.png" alt="close-icon">
-            <a href="shirts.html" class="nav-links lexend-peta-regular">Shirts</a>
-            <a href="pants.html" class="nav-links lexend-peta-regular">Pants</a>
-            <a href="bags.html" class="nav-links lexend-peta-regular">Bags</a>
-            <a href="shoes.html" class="nav-links lexend-peta-regular">Shoes</a>
-            <a href="jewelry.html" class="nav-links lexend-peta-regular">Jewelry</a>
+            <a href="new.html" class="nav-links lexend-peta-regular">NEW</a>
+            <a href="soleil-noir-collection.html" class="nav-links lexend-peta-regular">SOLEIL NOIR COLLECTION</a>
+            <a href="mens-clothing.html" class="nav-links lexend-peta-regular">MENS</a>
+            <a href="womens-clothing.html" class="nav-links lexend-peta-regular">WOMENS</a>
         </div>
         <div id="dropdown-account-link">
             <img id="close-icon" src="pictures/icons/close_24dp_D4AF37_FILL0_wght400_GRAD0_opsz24.png" alt="close-icon">
@@ -92,8 +92,7 @@
         
         document.getElementById("shopping-bag-icon").addEventListener("click", dropdownToggle);
         document.getElementById("close-icon").addEventListener("click", dropdownToggle);
-    </script>
-    <script>
+    
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {

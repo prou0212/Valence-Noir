@@ -6,6 +6,7 @@
 
 body {
     margin: 0;
+    overflow-x: hidden
 }
 /* Navigational Bar for header*/
 #navigation {
@@ -47,7 +48,7 @@ body {
     gap: 30px;
     padding: 50px 50px;
     background-color: white;
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     opacity: 0;
@@ -93,7 +94,6 @@ body {
 }
 
 #main-content {
-    margin: 75px 75px 50px 75px;
     padding: 75px 75px 50px 75px;
     text-align: center;
 }
@@ -118,15 +118,14 @@ main.blurred, header.blurred {
     border: 0;
 }
 
-#clothing-title {
+/* #clothing-title {
     text-align: center;
     font-size: 50px;
     color: white;
-}
+} */
 
 #clothing-selector-container {
     display: flex;
-    margin: 40px 40px;
     justify-content: center;
     align-items: center;
     flex-direction: row;
@@ -148,10 +147,7 @@ main.blurred, header.blurred {
 
 .collection-container h3, 
 .mens-wear-container h3,
-.womens-wear-container h3,
-.collection-container button, 
-.mens-wear-container button,
-.womens-wear-container button {
+.womens-wear-container h3 {
     color: white;
     font-size: 30px;
     text-align: center;
@@ -163,6 +159,15 @@ main.blurred, header.blurred {
     height: 400px;
     width: 100%;
     object-fit: contain;
+}
+
+.buttons {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    margin: 20px;
+    border: 0;
+    text-decoration: none;
 }
 
 .reveal {
