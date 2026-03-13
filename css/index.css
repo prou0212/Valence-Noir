@@ -99,7 +99,7 @@ body {
 }
 
 #main-text {
-    color: white;
+    color: rgb(212, 175, 55);
     font-size: 75px;
 }
 
@@ -172,19 +172,35 @@ a.buttons:hover {
     transform: translateY(0) scale(0.9);
 }
 
-#location-title {
-    text-align: center;
-    font-size: 40px;
-    color: white;
-    margin: 50px 20px;
+.subfooter-container ul {
+    display: flex;
+    margin: 20px;
+    padding: 0;
 }
 
-#location-description {
+.subfooter-container a {
+    display: block;
+    margin: 0;
+}
+
+.subfooter-container li {
+    padding: 30px;
+    margin: 0;
+}
+
+#subfooter-title {
+    text-align: center;
+    font-size: 20px;
+    color: white;
+}
+
+#subfooter-description,
+#subfooter-link {
     display: block;
     text-align: center;
-    font-size: 30px;
+    font-size: 15px;
     color: white;
-    margin: 50px 20px;
+    padding: 20px;
 }
 
 .reveal {
