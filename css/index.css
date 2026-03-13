@@ -118,12 +118,6 @@ main.blurred, header.blurred {
     border: 0;
 }
 
-/* #clothing-title {
-    text-align: center;
-    font-size: 50px;
-    color: white;
-} */
-
 #clothing-selector-container {
     display: flex;
     justify-content: center;
@@ -166,8 +160,31 @@ main.blurred, header.blurred {
     font-size: 20px;
     text-align: center;
     margin: 20px;
-    border: 0;
+    padding: 20px;
+    border: 2px;
+    border-style: solid;
+    border-color: white;
     text-decoration: none;
+    transition: transform 1.0s ease-in;
+}
+
+a.buttons:hover {
+    transform: translateY(0) scale(0.9);
+}
+
+#location-title {
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    margin: 50px 20px;
+}
+
+#location-description {
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    margin: 50px 20px;
 }
 
 .reveal {
