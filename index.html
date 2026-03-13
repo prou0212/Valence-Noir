@@ -31,13 +31,13 @@
             </div>
         </header>
         <main>
-           <div id="main-content">
-                <h1 class="sedan-sc-regular" id="main-text">
-                    WHERE DARKNESS MEETS ELEGANCE
-                </h1>
-           </div>
-           <video id="video-file" src="video/FASHION-FILM-final.mp4" autoplay loop muted playsinline></video>
-           <h1 class="sedan-sc-regular" id="clothing-title">SEE IT, DREAM IT, WEAR IT</h1>
+            <video id="video-file" src="video/FASHION-FILM-final.mp4" autoplay loop muted playsinline></video>
+            <div id="main-content">
+                 <h1 class="sedan-sc-regular reveal" id="main-text">
+                     WHERE DARKNESS MEETS ELEGANCE
+                 </h1>
+            </div>
+            <h1 class="sedan-sc-regular" id="clothing-title">SEE IT, DREAM IT, WEAR IT</h1>
            <div id="clothing-selector-container">
                 <div class="collection-container">
                     <h3 class="quicksand-regular" id="selector-title">SOLEIL NOIR COLLECTION</h3>
@@ -46,12 +46,12 @@
                 </div>     
                 <div class="mens-wear-container">
                     <h3 class="quicksand-regular">MEN'S CLOTHING</h3>
-                    <img src="pictures/index/naomi-campbell-walks-the-runway-during-the-balmain-homme-menswear-fall-winter-2024-2025-show-as-part-of-paris-fashion-week-on-january-20-2024-65b3917d7b5aa.jpg" alt="runway-collection">
+                    <img src="pictures/index/Dolce-e-Gabb-m-F23-018.jpg" alt="runway-collection">
                     <button class="sedan-sc-regular">SHOP NOW</button>
                 </div>
                 <div class="womens-wear-container">
                     <h3 class="quicksand-regular" id="selector-title">WOMEN'S CLOTHING</h3>
-                    <img src="pictures/index/naomi-campbell-walks-the-runway-during-the-balmain-homme-menswear-fall-winter-2024-2025-show-as-part-of-paris-fashion-week-on-january-20-2024-65b3917d7b5aa.jpg" alt="runway-collection">
+                    <img src="pictures/index/gigi-hadid-walks-the-runway-during-the-chanel-womenswear-spring-summer-2024-show-as-part-of-paris-fashion-week-on-october-03-2023-in-paris-france-65b39742e17c8.jpg" alt="runway-collection">
                     <button class="sedan-sc-regular">SHOP NOW</button>
                 </div>
            </div>
@@ -93,4 +93,16 @@
         document.getElementById("shopping-bag-icon").addEventListener("click", dropdownToggle);
         document.getElementById("close-icon").addEventListener("click", dropdownToggle);
     </script>
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                        }
+                    });
+                });
+
+                document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+            </script>
 </html>

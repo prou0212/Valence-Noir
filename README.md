@@ -9,3 +9,12 @@
   2. Cut the black border for website visibility purposes
   3. Removed creators name in the video for branding purposes.
 - All rights reserved and belonging to Felix Chacon"
+
+# Picture Credit
+
+# For index.html
+
+Naomi Campbell - Photo © Stephane Cardinale - Corbis/Getty Images. All rights reserved.
+Gigi Hadid - Photo © Kristy Sparow - Getty Images. All rights reserved.
+Dolce & Gabbana Menswear Fall 2023. Photography courtesy of ImaxTree.
+Link to website: https://fashionmagazine.com/style/plus-size-male-models/
