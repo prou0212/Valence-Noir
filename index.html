@@ -77,9 +77,9 @@
                         <li>
                             <h1 class="quicksand-regular" id="subfooter-title">Newsletter</h1>
                             <span class="quicksand-regular" id="subfooter-description">Subscribe to receive news from VALENCE-NOIR</span>
-                            <!-- <label for="email">Email:</label> -->
-                            <input type="email" class="sedan-sc-regular" id="address-email" name="address-email" placeholder="Email">
+                            <input type="email" class="quicksand-regular" id="address-email" name="address-email" placeholder="Email">
                             <button type="submit" class="quicksand-regular reveal" id="email-submit">SUBMIT</button>
+                            <span id="error-email"></span>
                         </li> 
                         <li>
                             <h1 class="quicksand-regular" id="subfooter-title">STORE LOCATION</h1>
@@ -107,7 +107,7 @@
         </div>
     </body>
     <script>
-
+        //For interaction with navigation logos and close icon 
         function dropdownToggle() {
             document.getElementById("dropdown-menu-link").classList.toggle("active");
             document.querySelector("main").classList.toggle("blurred");
@@ -123,6 +123,7 @@
         document.getElementById("shopping-bag-icon").addEventListener("click", dropdownToggle);
         document.getElementById("close-icon").addEventListener("click", dropdownToggle);
     
+        //For Reveal elements
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
@@ -133,5 +134,20 @@
                 });
 
                 document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+            
+            //Email Validation 
+            const emailInput = document.getElementById("address-email");
+            const emailError = document.getElementById("email-error");
+                const email = emailInput.value;
+                let regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+                
+                if(email.test(email)) {    
+                emailError.textContent = "Please enter a Valid Email Address";
+                emailError.style.display = "block";
+                } else {
+                    emailError.textContent = "";
+                    emailError.style.display = "none";
+                }
+            
             </script>
 </html>
