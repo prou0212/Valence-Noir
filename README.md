@@ -18,3 +18,5 @@ Naomi Campbell - Photo © Stephane Cardinale - Corbis/Getty Images. All rights r
 Gigi Hadid - Photo © Kristy Sparow - Getty Images. All rights reserved.
 Dolce & Gabbana Menswear Fall 2023. Photography courtesy of ImaxTree.
 Link to website: https://fashionmagazine.com/style/plus-size-male-models/
+Easy-Peasy.AI - Stunning Ultra-Realistic Portrait of a Real Woman
+Link to Website: https://easy-peasy.ai/ai-image-generator/images/ultra-realistic-high-end-personal-portrait-of-413954ef-a5d6-4124-89b7-a12b4618c853
